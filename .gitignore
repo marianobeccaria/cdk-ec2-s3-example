@@ -9,6 +9,7 @@ __pycache__/
 *$py.class
 
 # Environments
+config.ini
 .env
 .venv
 env/
