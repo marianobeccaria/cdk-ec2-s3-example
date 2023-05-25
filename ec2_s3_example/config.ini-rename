@@ -1,0 +1,9 @@
+## You should rename this file to config.ini in your local environment
+## Substitute values below according to your environment before running cdk deploy
+[Settings]
+aws_account_id = 111111111111
+region = us-east-1
+vpc_id = vpc-11111111111111111
+ami_image = ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20230516
+ec2_type = t3.micro
+
