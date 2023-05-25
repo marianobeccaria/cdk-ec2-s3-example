@@ -9,6 +9,7 @@ config = configparser.ConfigParser()
 config.read('./config.ini')
 print("AWS Account: ", config.get('Settings','aws_account_id'))
 print("Region: ", config.get('Settings','region'))
+print("AMI: ", config.get('Instance','ami_image'))
 
 app = cdk.App()
 
@@ -17,6 +18,9 @@ env = cdk.Environment(
   account=config.get('Settings', 'aws_account_id')
 )
 
-Ec2S3ExampleStack(app, "ec2-s3-example", env=env)
+vpc_info = config["VPC"]
+ec2instance = config["Instance"]
+
+Ec2S3ExampleStack(app, "ec2-s3-example", env=env, ec2instance=ec2instance, vpc_info=vpc_info)
 
 app.synth()
