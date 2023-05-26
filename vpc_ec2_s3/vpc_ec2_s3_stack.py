@@ -6,7 +6,7 @@ from aws_cdk import (
     aws_s3 as s3,
 )
 
-class Ec2S3ExampleStack(Stack):
+class VpcEc2S3Stack(Stack):
 
     def __init__(self, scope: Construct, construct_id: str, ec2instance=None, vpc_info=None, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
@@ -60,10 +60,11 @@ class Ec2S3ExampleStack(Stack):
                 ec2.BlockDevice(
                     device_name="/dev/sda1",
                     volume=ec2.BlockDeviceVolume.ebs(int(ec2instance["ebs_root_size"]))
+                ), 
+                # Creates and mounts a 5GiB volume
+                ec2.BlockDevice(
+                    device_name="/dev/sdc",
+                    volume=ec2.BlockDeviceVolume.ebs(5)
                 )
-                #, ec2.BlockDevice(
-                    #device_name="/dev/sdc",
-                    #volume=ec2.BlockDeviceVolume.ebs(5)
-                #)
             ]
         )

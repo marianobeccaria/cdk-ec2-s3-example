@@ -3,7 +3,7 @@
 import aws_cdk as cdk
 import configparser
 
-from ec2_s3_example.ec2_s3_example_stack import Ec2S3ExampleStack
+from vpc_ec2_s3.vpc_ec2_s3_stack import VpcEc2S3Stack
 
 config = configparser.ConfigParser()
 config.read('./config.ini')
@@ -21,6 +21,6 @@ env = cdk.Environment(
 vpc_info = config["VPC"]
 ec2instance = config["Instance"]
 
-Ec2S3ExampleStack(app, "ec2-s3-example", env=env, ec2instance=ec2instance, vpc_info=vpc_info)
+VpcEc2S3Stack(app, "ec2-s3-example", env=env, ec2instance=ec2instance, vpc_info=vpc_info)
 
 app.synth()
