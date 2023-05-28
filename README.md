@@ -14,6 +14,11 @@ it assumes that there is a `python3` executable in your path with access to the 
 ```
 $ npm install -g aws-cdk
 ```
+If you havent boostraped cdk with your account before, you need to run this command once:
+```
+cdk bootstrap aws://ACCOUNT-NUMBER/REGION
+```
+See Prerequisits for more info: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_prerequisites
 
 3. Clone this repository in your local host: 
 ```
