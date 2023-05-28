@@ -1,11 +1,13 @@
-## You should rename this file to config.ini in your local environment
-## Substitute values below according to your environment before running cdk deploy
+# You should rename this file to config.ini in your local environment
+# Substitute values below according to your environment before running cdk deploy
+# IMPORTANT: Dont use quotes '' or double "" quotes for any of the values
+
 [Settings]
-aws_account_id = 111111111111
+aws_account_id = 111222333444
 region = us-east-1
 
 [VPC]
-vpc_id = vpc-11111111111111111
+vpc_id = vpc-11122233344455566
 vpc_ipaddress_cidr = 10.5.0.0/21
 
 [Instance]
@@ -16,3 +18,4 @@ key_name = my-key-0001
 key_type = rsa
 # EBS block device size in GiB
 ebs_root_size = 10
+bucket_01 = <YOUR_BUCKET_NAME>

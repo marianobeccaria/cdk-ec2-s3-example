@@ -21,6 +21,6 @@ env = cdk.Environment(
 vpc_info = config["VPC"]
 ec2instance = config["Instance"]
 
-VpcEc2S3Stack(app, "ec2-s3-example", env=env, ec2instance=ec2instance, vpc_info=vpc_info)
+VpcEc2S3Stack(app, "ec2-s3-example", env=env, MyInstance=ec2instance, VpcInfo=vpc_info)
 
 app.synth()
