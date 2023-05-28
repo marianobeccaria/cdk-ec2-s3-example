@@ -13,6 +13,7 @@ it assumes that there is a `python3` executable in your path with access to the 
 2. Install and configure `cdk` command line in your local host.
    ```
    $ npm install -g aws-cdk
+   $ cdk version
    ```
    If you havent boostraped cdk with your account before, you need to run this command once:
    ```
