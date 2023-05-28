@@ -23,14 +23,15 @@ $ git clone https://github.com/marianobeccaria/cdk-ec2-s3-example.git
 4. Activate your python virtualenv:
    If for any reason the automatic creation of the virtualenv fails, you can create the virtualenv
    manually once the init process completes.
+   
    To manually create a virtualenv on MacOS and Linux: `$ python3 -m venv .venv`
 
-   Then activate the environment: 
-    `source .venv/bin/activate`     (For Linux or Mac)
+   Then activate the environment:
+   
+      `source .venv/bin/activate`     (For Linux or Mac)
+      `.venv\Scripts\activate.bat`     (For Windows)
 
-    `.venv\Scripts\activate.bat`     (For Windows)
-
-Finally install requirements:  `pip install -r requirements.txt`
+   Finally install requirements:  `pip install -r requirements.txt`
 
 5. Rename file `config.ini-rename` to `config.ini` and edit it with your own info: AWS account ID, vpc ID, bucket, etc
 
