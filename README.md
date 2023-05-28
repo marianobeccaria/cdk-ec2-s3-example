@@ -11,19 +11,19 @@ it assumes that there is a `python3` executable in your path with access to the 
    See: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 2. Install and configure `cdk` command line in your local host.
-```
-$ npm install -g aws-cdk
-```
-If you havent boostraped cdk with your account before, you need to run this command once:
-```
-cdk bootstrap aws://ACCOUNT-NUMBER/REGION
-```
-See Prerequisits for more info: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_prerequisites
+   ```
+   $ npm install -g aws-cdk
+   ```
+   If you havent boostraped cdk with your account before, you need to run this command once:
+   ```
+   cdk bootstrap aws://ACCOUNT-NUMBER/REGION
+   ```
+   See Prerequisits for more info: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_prerequisites
 
 3. Clone this repository in your local host: 
-```
-$ git clone https://github.com/marianobeccaria/cdk-ec2-s3-example.git
-```
+   ```
+   $ git clone https://github.com/marianobeccaria/cdk-ec2-s3-example.git
+   ```
 
 4. Activate your python virtualenv:
    If for any reason the automatic creation of the virtualenv fails, you can create the virtualenv
