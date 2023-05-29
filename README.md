@@ -1,6 +1,6 @@
 # VPC, EC2 instance and S3 bucket example
 ## Description
-This repo creates a VPC, an ec2 instance, and a bucket that's accessible from the instance with a role and read policy
+This repo used CDK  v2 to creates a VPC, an ec2 instance, and a bucket that's accessible from the instance with a role and read policy
 
 ## How to run this contract and deploy resources to AWS?
 This project is set up like a standard Python project.  The initialization process also creates
